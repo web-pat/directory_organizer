@@ -18,13 +18,13 @@ Example:
 	    ".mp3": folders["audio"]
     }
 ```
-In this example I have two folders, one named ``"vincents_images"`` and one named ``"my_music"``. The idea here is that the key in the ``folders`` dictionary is the name that will be referenced in the ``actions`` dictionary and in the rest of the code. The value in the dictionary is the name you want your folder to have on your system (your actual folder name).
+In this example I have two folders, one named `"vincents_images"` and one named `"my_music"`. The idea here is that the key in the `folders` dictionary is the name that will be referenced in the `actions` dictionary and in the rest of the code. The value in the dictionary is the name you want your folder to have on your system (your actual folder name).
 
 
 # How to install
 
  - Download the python file from the github repository.
- - use git - ``git clone https://www.github.com/vincent-gustafsson/direcotry_organizer``
+ - use git - `git clone https://www.github.com/vincent-gustafsson/direcotry_organizer`
 
 # How to run
 
@@ -32,4 +32,9 @@ In this example I have two folders, one named ``"vincents_images"`` and one name
 
  1. Open the terminal.
  2. Make sure you are in the correct directory.
- 3. Type ``python organizer.py´´
+ 3. Type `python organizer.py /your/folder/path`
+ 
+ ## Preconfigure script to organize one or several directories in a single run
+  1. Comment out line 5
+  2. Uncomment line 8 and add as many path paramaters in this and subsequent lines as you see fit
+ 
