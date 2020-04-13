@@ -1,39 +1,48 @@
 from pathlib import Path
 
-# The folder you want to organize
-directory = Path("C:/Users/Vincent/Downloads")
+import sys
+# Input target folder as command line argument
+directory = Path(sys.argv[1])
+
+# Alternatively, preconfigure one or multiple paths to be sorted by removing comment below and entering path variables. Then uncomment line above
+#directory = Path("/home/patrick/Downloads")
 
 # The folders you want to have.
 # The keys are what you refer to in the code
 # The Values are the actual names of the folders that get creatad.
 folders = {
-    "images": "images",
-    "videos": "videos",
-    "exe_zip": "exe_zip",
-    "audio": "audio",
-    "other": "other"
+    "Images": "Images",
+    "Videos": "Videos",
+    "Archives": "Archives",
+    "Audio": "Audio",
+    "Other": "Other"
 }
 
 # These are the "actions".
 # The keys are the file extensions you want to move into the specified folder.
 # The values are the folder you want the files with the extension to go in to.
 actions = {
-    ".png": folders["images"],
-    ".jpg": folders["images"],
-    ".gif": folders["images"],
+    ".png": folders["Images"],
+    ".jpg": folders["Images"],
+    ".gif": folders["Images"],
 
-    ".mp4": folders["videos"],
-    ".mov": folders["videos"],
-    ".avi": folders["videos"],
+    ".mp4": folders["Videos"],
+    ".mov": folders["Videos"],
+    ".avi": folders["Videos"],
 
-    ".exe": folders["exe_zip"],
-    ".rar": folders["exe_zip"],
-    ".zip": folders["exe_zip"],
-
-    ".wav": folders["audio"],
-    ".mp3": folders["audio"],
-    ".ogg": folders["audio"],
-    ".flac": folders["audio"],
+    ".rar": folders["Archives"],
+    ".zip": folders["Archives"],
+    ".7z": folders["Archives"],
+    ".gz": folders["Archives"],
+    ".tar.gz": folders["Archives"],
+    ".tar.xz": folders["Archives"],
+    ".tar.bz2": folders["Archives"],
+    ".tar.lzma": folders["Archives"],
+    
+    ".wav": folders["Audio"],
+    ".mp3": folders["Audio"],
+    ".ogg": folders["Audio"],
+    ".flac": folders["Audio"],
 }
 
 
@@ -54,9 +63,9 @@ def organize_folder(dir):
                 dest_path = dir.joinpath(actions[file.suffix], file.name)
                 file.rename(dest_path)
             
-            # If the file doesn't have an extension, move it into the "other" folder. 
+            # If the file doesn't have an extension, move it into the "Other" folder. 
             except KeyError:
-                dest_path = dir.joinpath(folders["other"], file.name)
+                dest_path = dir.joinpath(folders["Other"], file.name)
                 file.rename(dest_path)
 
 
