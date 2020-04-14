@@ -15,6 +15,7 @@ folders = {
     "Videos": "Videos",
     "Archives": "Archives",
     "Audio": "Audio",
+    "Documents": "Documents",
     "Other": "Other"
 }
 
@@ -43,6 +44,9 @@ actions = {
     ".mp3": folders["Audio"],
     ".ogg": folders["Audio"],
     ".flac": folders["Audio"],
+
+    ".pdf": folders["Documents"],
+    ".odt": folders["Documents"],
 }
 
 
