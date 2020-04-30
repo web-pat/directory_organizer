@@ -26,7 +26,8 @@ actions = {
     ".png": folders["Images"],
     ".jpg": folders["Images"],
     ".gif": folders["Images"],
-
+    ".svg": folders["Images"],
+    
     ".mp4": folders["Videos"],
     ".mov": folders["Videos"],
     ".avi": folders["Videos"],
