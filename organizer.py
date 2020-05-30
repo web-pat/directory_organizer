@@ -31,7 +31,9 @@ actions = {
     ".mp4": folders["Videos"],
     ".mov": folders["Videos"],
     ".avi": folders["Videos"],
-
+    ".mkv": folders["Videos"],
+    ".m4v": folders["Videos"],
+    
     ".rar": folders["Archives"],
     ".zip": folders["Archives"],
     ".7z": folders["Archives"],
@@ -48,6 +50,9 @@ actions = {
 
     ".pdf": folders["Documents"],
     ".odt": folders["Documents"],
+    ".ods": folders["Documents"],
+    ".doc": folders["Documents"],
+    ".docx": folders["Documents"],
 }
 
 
