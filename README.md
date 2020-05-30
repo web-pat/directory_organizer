@@ -6,7 +6,7 @@ Example:
 ```py
  # Folder name in code: Folder name in file explorer
     folders = {
-	    "images": "vincents_images",
+	    "images": "my_images",
 	    "audio": "my_music"
     }
     
@@ -23,8 +23,8 @@ In this example I have two folders, one named `"vincents_images"` and one named 
 
 # How to install
 
- - Download the python file from the github repository.
- - use git - `git clone https://www.github.com/vincent-gustafsson/direcotry_organizer`
+ - Download the python file from the github repository. OR
+ - use git - `git clone https://github.com/web-pat/directory_organizer.git`
 
 # How to run
 
@@ -36,5 +36,5 @@ In this example I have two folders, one named `"vincents_images"` and one named 
  
  ## Preconfigure script to organize one or several directories in a single run
   1. Comment out line 5
-  2. Uncomment line 8 and add as many path paramaters in this and subsequent lines as you see fit
+  2. Uncomment line 8 and add as many path parameters in this and subsequent lines as you see fit.
  
