@@ -35,6 +35,8 @@ In this example I have two folders, one named `"vincents_images"` and one named 
  3. Type `python organizer.py /your/folder/path`
  
  ## Preconfigure script to organize one or several directories in a single run
-  1. Comment out line 5
-  2. Uncomment line 8 and add as many path parameters in this and subsequent lines as you see fit.
+  1. Comment out line 5  
+  `#directory = Path(sys.argv[1])`
+  2. Uncomment line 8 and add as many path parameters in this and subsequent lines as you see fit.  
+  `directory = Path("/path/to/your/directory")`
  
